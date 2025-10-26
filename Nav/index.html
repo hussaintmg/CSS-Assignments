@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #d6e3ec;
+      }
+      #main1,
+      #main2,
+      #main3 {
+        display: flex;
+        height: 60px;
+        box-sizing: border-box;
+        background-color: #24252a;
+        color: white;
+        margin: 70px 20px;
+      }
+      h1{
+        font-family: sans-serif;
+      }
+      ul{
+        display: flex;
+      }
+      li{
+        margin-left: 10px;
+        list-style-type: none;
+        font-family: sans-serif;
+        color: #ffffffb5;
+      }
+      .item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #main1 {
+        justify-content: space-around;
+        align-items: center;
+      }
+      #main2 {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 120px 0 70px;
+      }
+      #main3 {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 120px 0 120px;
+      }
+      .button{
+        margin-left: 30px;
+        font-family: sans-serif;
+      }
+      button{
+        width: 80px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        background-color: #0088a8;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="main1">
+        <h1>LOGOBACKERY</h1>
+        <ul>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>About</li>
+        </ul>
+        <button>Contact</button>
+      </div>
+      <div id="main2">
+        <h1>LOGOBACKERY</h1>
+        <div class="item">
+          <ul>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>About</li>
+          </ul>
+          <button class="button">Contact</button>
+        </div>
+      </div>
+      <div id="main3">
+        <h1>LOGOBACKERY</h1>
+        <div class="item">
+          <ul>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>About</li>
+          </ul>
+          <button class="button">Contact</button>
+        </div>
+      </div>
+  </body>
+</html>
